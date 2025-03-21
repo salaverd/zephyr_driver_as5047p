@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# Copyright (c) 2024 Intel
+
+
+config AMS_AS5047P
+	bool "AS5047P Angular position sensor"
+	default y
+	depends on DT_HAS_AMS_AS5047P_ENABLED
+	select SPI
+	help
+	  Enable driver for AS5047P Angular position sensor.
